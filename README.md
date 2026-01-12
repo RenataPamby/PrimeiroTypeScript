@@ -6,7 +6,7 @@
 
 ---
 
-## 📚 Sobre este repositório
+## Sobre este repositório
 
 Este repositório tem como objetivo registrar meu aprendizado em **TypeScript puro**, focando nos fundamentos da linguagem e na sua aplicação fora do contexto de frameworks.
 
@@ -27,12 +27,12 @@ Este estudo serve como **base complementar** para meus projetos em **React + Typ
 
 ---
 
-## 🔗 Repositório complementar – Primeiro React
+## Repositório complementar – Primeiro React
 
 Este é o repositório paralelo que mostra meu aprendizado em **React**.
 
 📌 **Repositório:**  
-👉 https://github.com/RenataPamby/PrimeiroReact
+ https://github.com/RenataPamby/PrimeiroReact
 
 ---
 
@@ -53,11 +53,11 @@ Este é o repositório paralelo que mostra meu aprendizado em **React**.
 - TypeScript  
 - Node.js  
 - npm  
-- tsx (para execução em desenvolvimento)  
+- tsx  
 
 ---
 
-## ⚠️ Observação importante
+## Observação importante
 
-Este repositório é **exclusivamente educacional**.  
+Este repositório é **para estudo**.  
 O foco está no aprendizado da linguagem e não na entrega de uma aplicação finalizada.
