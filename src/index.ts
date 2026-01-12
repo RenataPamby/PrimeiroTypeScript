@@ -1,36 +1,65 @@
-//Interfaces
-interface UserCarteira {
-    coins?: number;
-    credtits?: number;
-}
-interface User {
-    name: string;
-    createdAt: Date;
-    carteira?: UserCarteira;
-}
-//pode fazer também
-// interface User {
-//     exibir (): void
-// }
+//Union types
 
-//função de definição
-function createUser(name: string): User {
-    return { name, createdAt: new Date(),
-        // exibir () {
-        //     console.log("Pode ter uma string")
-        // },
+type Primitive = string | number | boolean;
+
+//posso usar um dos tipos acima
+export function main (value: Primitive){
+    //vai passando o mouse em cima do value para ver os tipo
+    value;
+    if (typeof value === "string"){
+        value;
     }
-}
-function updateCarteira(user: User, carteira: UserCarteira){
-    user.carteira = {...user.carteira, ...carteira}//(...) se chama espalhamento ??? NÃO ENTENDI
+    if (typeof value === "number"){
+        value;
+    }
+    if (typeof value === "boolean"){
+        value;
+        return;
+    }
+    value;
 }
 
-//definindo usuario e carteira
-const user01 = createUser("Renata");
-updateCarteira(user01, {coins: 10});
-updateCarteira(user01, {credtits: 20});
+//EXEMPLO 01
+enum TrafficLightType{
+    Yellow,
+    Red,
+    Green,
+}
 
-//testando funcionamento
-console.log("Usuario", user01.name, "você tem", user01.carteira?.coins, "moedas na carteira e",
-    user01.carteira?.credtits, "no credito"
-);
+interface YellowColor {
+    type : TrafficLightType.Yellow;
+    wait(): void;
+}
+interface RedColor {
+    type : TrafficLightType.Red;
+    stop(): void;
+}
+interface GreenColor {
+    type : TrafficLightType.Green;
+    drive(): void;
+}
+
+type TrafficLight = YellowColor | RedColor | GreenColor;
+
+const trafficLight: TrafficLight = {
+    //se eu chamar um so vai trazer o metodo dele
+    type: TrafficLightType.Green,
+    drive() {
+        
+    },
+}
+
+
+//EXEMPLO 02 com o 03
+type ImageSize = 8 | 10 | 19 | "string tambem"
+
+interface Image {
+    name : string;
+    size: ImageSize;
+}
+const image: Image = {
+    name: "Renata",
+    size: 19,
+    //ou
+    //size: "string tambem",
+}
