@@ -1,38 +1,36 @@
-// types annotations
-
-//tipos primitivos
-const myString: string = "Hello";
-const myNumber: number = 20; //tmb tem Ifinity e NaN
-const myBoolean: boolean = true;
-const myCon: null = null;
-const myType: undefined = undefined;
-const myVar: any = 1; //any pode ser qualquer coisa. NÂO RECOMENDADO
-
-
-//inferencias de tipos
-const myName = "Renata"; //já entende o tipo da variavel
-//inferencia de OBJETOS
-const animal = {
-    name: "gato",
-    age: 5
+//Interfaces
+interface UserCarteira {
+    coins?: number;
+    credtits?: number;
 }
-//inferencia de ARRAY
-const vet = [1, 2, 3, 4];
-
-
-//funções
-function sum(a: number, b: number): number{//esse number é o tipo de retorno
-    return a+b;
+interface User {
+    name: string;
+    createdAt: Date;
+    carteira?: UserCarteira;
 }
-function greet(name: string, age?: number){
-  //interrogação faz o parametro ser opcional
-  //OBS: somente os ultimos paramentros podem ser opcional
-  //um parametro obrigatorio não pode ser seguido de um opcional  
+//pode fazer também
+// interface User {
+//     exibir (): void
+// }
+
+//função de definição
+function createUser(name: string): User {
+    return { name, createdAt: new Date(),
+        // exibir () {
+        //     console.log("Pode ter uma string")
+        // },
+    }
+}
+function updateCarteira(user: User, carteira: UserCarteira){
+    user.carteira = {...user.carteira, ...carteira}//(...) se chama espalhamento ??? NÃO ENTENDI
 }
 
-//função de flexa
-const filter = (value: number) => value < 0;
+//definindo usuario e carteira
+const user01 = createUser("Renata");
+updateCarteira(user01, {coins: 10});
+updateCarteira(user01, {credtits: 20});
 
-const number = [1, 2, 3, 4, -1 , -2];
-
-number.filter(filter);//passe o mouse em cima
+//testando funcionamento
+console.log("Usuario", user01.name, "você tem", user01.carteira?.coins, "moedas na carteira e",
+    user01.carteira?.credtits, "no credito"
+);
