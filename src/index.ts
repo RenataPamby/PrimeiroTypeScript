@@ -1,4 +1,4 @@
-import { criarTarefa, excluirTarefa, exibirTarefas } from './controller.js';
+import { criarTarefa, excluirTarefa, exibirTarefas } from './functions.js';
 
 //É obrigatorio preencher o titulo e o status, mas opicional preencher a prioridade
 criarTarefa({ titulo: 'Estudar TypeScript', status: "Concluido", });
