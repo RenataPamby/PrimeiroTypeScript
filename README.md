@@ -40,8 +40,7 @@ Este é o repositório paralelo que mostra meu aprendizado em **React**.
 
 - Tipos primitivos e inferência de tipos  
 - Tipagem de arrays e objetos  
-- Union types  
-- Diferença entre `unknown` e `any`  
+- Union types    
 - Tipagem de funções e retorno  
 - Diferença entre `type` e `interface`  
 - Leitura e interpretação de erros do TypeScript  

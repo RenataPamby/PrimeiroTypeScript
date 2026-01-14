@@ -6,8 +6,8 @@
   "main": "build/index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "tsx src/02-inteface.ts", 
-    "start": "node ."
+    "dev": "tsx src/view.ts", 
+    "start": "node build/view.js"
   },
   "devDependencies": {
     "@types/node": "^25.0.6",
