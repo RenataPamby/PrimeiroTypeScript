@@ -25,6 +25,7 @@ Ele está diretamente relacionado ao repositório de estudos em React, servindo 
 - Tipagem de funções
 - Tipagem de retorno
 - Ler erros TypeScript
+- Mini projeto (fixar conceitos)
 
 ## Fontes de estudo
 - Documentação oficial do TypeScript: https://www.typescriptlang.org/docs/
