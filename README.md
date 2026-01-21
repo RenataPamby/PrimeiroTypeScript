@@ -10,7 +10,10 @@
 
 Este repositório tem como objetivo registrar meu aprendizado em **TypeScript puro**, focando nos fundamentos da linguagem e na sua aplicação fora do contexto de frameworks.
 
-Ele **não representa um projeto final**, mas sim um ambiente de estudo, prática e experimentação, onde cada commit reflete conceitos aprendidos em aulas e estudos individuais.
+Ele **não representa um projeto final completo**, mas sim um ambiente de estudo, prática e experimentação, sendo estruturado da seguinte maneira:
+
+- 📁 **estudo_aula/** – Anotações e códigos baseados nas aulas e conceitos estudados, onde cada arquivo é uma aula.
+- 📁 **src/** – Um **mini projeto prático de fixação**, que aplica os conceitos de TypeScript aprendidos durante o estudo.
 
 ---
 
@@ -27,7 +30,7 @@ Este estudo serve como **base complementar** para meus projetos em **React + Typ
 
 ---
 
-## Repositório complementar – Primeiro React
+### Repositório complementar – Primeiro React
 
 Este é o repositório paralelo que mostra meu aprendizado em **React**.
 
@@ -47,16 +50,16 @@ Este é o repositório paralelo que mostra meu aprendizado em **React**.
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## ▶️ Como rodar o projeto
 
-- TypeScript  
-- Node.js  
-- npm  
-- tsx  
+```bash
+npm install  
+npm run dev
+```
 
----
-
-## Observação importante
+### Observação
 
 Este repositório é **para estudo**.  
 O foco está no aprendizado da linguagem e não na entrega de uma aplicação finalizada.
+
+Caso queira se inspirar nesta forma de estudo, recomendo também a leitura do arquivo **CRONOGRAMA.md**, onde está organizado o planejamento da aprendizagem e as fontes do estudo.
