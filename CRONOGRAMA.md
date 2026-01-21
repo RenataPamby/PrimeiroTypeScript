@@ -7,6 +7,7 @@ Aprender a base de TypeScript necessária para iniciar o estudo de React + Vite 
 
 Este cronograma foi pensado como um estudo de fundamentos, com o objetivo de facilitar o aprendizado de React.
 Ele está diretamente relacionado ao repositório de estudos em React, servindo como base teórica e prática para esse próximo passo.
+
 🔗 **Repositório de estudos em React:**
  https://github.com/RenataPamby/PrimeiroReact
 
